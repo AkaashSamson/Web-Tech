@@ -13,18 +13,58 @@
             display: flex;
             flex-direction: column;
             /*justify-content: center;  /*Align items to the bottom */
-
-            .bottom-text {
-            text-align: center;
-            width: 100%;
-            /*background: rgba(255, 255, 255, 0.5);  Optional: Add a semi-transparent background for readability */
-            margin-left: 10px;
         }
+            .bottom-text {
+            display: flex;
+            justify-content: center;
+            /* width: 100vh; */
+            /*background: rgba(255, 255, 255, 0.5);  Optional: Add a semi-transparent background for readability */
+        }
+
+        .flex-container {
+            padding-left: 400px;
+            padding-right: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
         }
     </style>
 </head>
 <body>
     <h1 style="text-align: center;">Chill Time</h1>
      <p class="bottom-text">No just kidding, Dont kill me please. The time is {{cur_time}} </p>
+     <br>
+     <p class="bottom-text">Meanwhile Catch a Poem</p>
+     <br>
+     <div class = "flex-container">
+     <p class="bottom-text">In the hush of night, where shadows play,
+        A bus stop waits, in soft dismay.
+        Beneath the glow of neon light,
+        Silent whispers fill the night.
+        
+        Benches stand, a quiet row,
+        Reflecting dreams of those who go.
+        Leaves dance gently in the breeze,
+        As time drips slowly, like the trees.
+        
+        A lone trash can, weary and worn,
+        Holds secrets of the day, now shorn.
+        The city breathes, a tranquil sigh,
+        Under the watchful, starry sky.
+        
+        In this moment, still and clear,
+        Life pauses, drawing near.
+        A fleeting glimpse of stories untold,
+        In the heart of night, where dreams unfold.</p>
+       
+        </div>
+    <br>
+    <div class = "flex-container">
+        <audio controls>
+            <source src="\static\Urbanroads.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            </div>
 </body>
 </html>
