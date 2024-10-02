@@ -1,4 +1,9 @@
-const names = require("silly-names-hun");
+//const names = require("silly-names-hun");
 
-sillyname = names.getRandomName();
+import generateName from "sillyname";
+import { randomSuperhero } from "superheroes";
+
+var sillyname = generateName();
+var superhero = randomSuperhero();
 console.log("My name is " + sillyname);
+console.log("I am " + superhero);
